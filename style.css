@@ -10,9 +10,11 @@ body{
 }
 
 .main-header{
-    position: sticky;
-    top: 0;
-    left: 0;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 2px;
 }
 
 .main-nav{
@@ -96,9 +98,12 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 80px;
+    gap: 15px;
 }
 
 .main--top{
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -112,26 +117,79 @@ h1{
     color: white;
 }
 
-.main--top p{
+.main-p{
     font-size: 26px;
     text-align: center;
     line-height: 1.5;
     font-weight: 500;
     width: 720px;
     letter-spacing: -0.3px;
+    margin-bottom: 10px;
 }
 
 .main-download{
     width: 422.7px;
-    height: 112.52px;
+    height: 130px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .main-download p{
-    font-size: 10px;
+    text-align: center;
 }
 
 .main-img{
     width: 1240px;
+}
+
+.main-buttons{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.main-buttons button{
+    flex: 1;
+    font-size: 18px;
+    padding: 10px 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.main-links{
+    font-size: 13px ;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.main-links a{
+    color: #0078d4;
+}
+
+.terms{
+    font-size: 11px;
+    opacity: 0;
+    transition-duration: .15s;
+}
+
+.main-download:hover .terms{
+    opacity: 1;
+}
+
+.button-1{
+    background-color:  #0078d4;
+    color: white;
+}
+
+.button-1:hover{
+
+}
+
+.button-2{
+    background-color: #ffffff1a;
+    color: #e9eaeb;
 }
