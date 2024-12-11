@@ -10,7 +10,9 @@ body{
 }
 
 .main-header{
-    display: fixed;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
 .main-nav{
@@ -38,11 +40,11 @@ body{
     font-size: 20px;
 }
 
-a{
+header a{
     color: #9ba3b4;
 }
 
-a:link{
+header a:link{
     text-decoration: none;
     color: #9ba3b4;
 }
@@ -86,4 +88,50 @@ a:link{
     border: 1px solid rgba(255,255,255, .15);
     padding: 5px 12px 5px 36px;
     color: #9ba3b4;
+}
+
+/* main */
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main--top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 1240px;
+}
+
+h1{
+    font-size: 72px;
+    color: white;
+}
+
+.main--top p{
+    font-size: 26px;
+    text-align: center;
+    line-height: 1.5;
+    font-weight: 500;
+    width: 720px;
+    letter-spacing: -0.3px;
+}
+
+.main-download{
+    width: 422.7px;
+    height: 112.52px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-download p{
+    font-size: 10px;
+}
+
+.main-img{
+    width: 1240px;
 }
