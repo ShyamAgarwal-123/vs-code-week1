@@ -7,14 +7,17 @@
 body{
     color: #9ba3b4;
     background-color: #0d1117;
+    position: relative;
 }
 
-.main-header{
+header{
     position: fixed;
     top: 0px;
     left: 0px;
     right: 0px;
     z-index: 2px;
+    background-color: #0d1117;
+    border-color: #9ba3b4;
 }
 
 .main-nav{
@@ -71,8 +74,21 @@ header a:link{
 }
 
 .dark-mode{
-    height: 20px;
+    height: 32px;
+    width: 18px;
+    background-color: #0d1117;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 3px;
 }
+
+.sun-img{
+    height: 20px;
+    width: 20px;
+}
+
+
 
 .download{
     color: white;
@@ -90,6 +106,24 @@ header a:link{
     border: 1px solid rgba(255,255,255, .15);
     padding: 5px 12px 5px 36px;
     color: #9ba3b4;
+    border-radius: 5px;
+}
+
+.search::placeholder{
+    color: #9ba3b4;
+}
+
+.search-box{
+    position: relative;
+}
+
+.search-button{
+    background-color: #0d1117;
+    border: none;
+    position: absolute;
+    left: 15px;
+    top: 9px;
+    cursor: pointer;
 }
 
 /* main */
